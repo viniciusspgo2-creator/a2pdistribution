@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import {useEffect,useState,type FormEvent} from 'react';
 import {motion,useReducedMotion} from 'motion/react';
-import {ArrowRight,ArrowUpRight,Truck,ShieldCheck,Package,Headphones,MapPinned,Download,CheckCircle2,ChevronRight,Phone,Send,HeartHandshake,Clock3,Boxes,Warehouse,Sparkles,Star,MapPin,Instagram,Facebook,ChevronLeft,ChevronRight} from 'lucide-react';
+import {ArrowRight,ArrowUpRight,Truck,ShieldCheck,Package,Headphones,MapPinned,Download,CheckCircle2,ChevronRight,Phone,Send,HeartHandshake,Clock3,Boxes,Warehouse,Sparkles,Star,MapPin,Instagram,Facebook,ChevronLeft} from 'lucide-react';
 import {t,type Locale} from '@/lib/i18n';
 import type {Settings} from '@/lib/db';
 import type {Post} from '@/lib/posts';
