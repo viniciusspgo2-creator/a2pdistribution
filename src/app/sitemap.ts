@@ -9,7 +9,7 @@ type SitemapEntry = MetadataRoute.Sitemap[number];
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const host = process.env.SITE_URL?.replace(/\/$/, '') || 'https://a2pdistribution.com';
   const articleList = await posts();
-  const paths = ['', '/blog', '/privacidade', ...articleList.map((post) => `/blog/${post.slug}`)];
+  const paths = ['', '/blog', '/privacidade', ...['supermercados','mercearias','cafes','snack-bares','restaurantes','hotelaria'].map(slug => `/setores/${slug}`), ...articleList.map((post) => `/blog/${post.slug}`)];
 
   return paths.flatMap((path) =>
     locales.map((lang): SitemapEntry => ({

@@ -29,7 +29,7 @@ export function ensureSchema(): Promise<void> {
 export type Overrides = Partial<Copy> & { storyTitle?: string; storyDescription?: string; ctaTitle?: string }; 
 export type Settings = {
   locales?: Partial<Record<'pt'|'es'|'de'|'fr'|'en', Overrides>>;
-  catalogUrl?: string; heroImage?: string; whatsappNumber?: string;
+  catalogUrl?: string; heroImage?: string; heroSlides?: string[]; whatsappNumber?: string;
   googleVerification?: string; seoTitle?: string; seoDescription?: string;
 };
 export async function settings(): Promise<Settings> {
